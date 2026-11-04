@@ -1,0 +1,13 @@
+[package]
+name = "jaeymo/roblox-plugins"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+private = true
+
+[dependencies]
+Promise = "howmanysmall/typed-promise@4.0.6"
+Janitor = "howmanysmall/janitor@1.18.3"
+Packet = "jaeymo/suphi-packet@0.1.0"
+Signal = "sleitnick/signal@2.0.3"
+Classy = "jaeymo/classy@2.1.2"
