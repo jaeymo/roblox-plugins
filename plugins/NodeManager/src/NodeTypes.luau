@@ -12,11 +12,6 @@ local MAX_ATTRIBUTE_NAME_LENGTH = 100
 local VALUE_TYPES: { Types.FieldValueType } = { "string", "number", "boolean" }
 local RESERVED_NAMES = { ATTRIBUTES.TYPE, ATTRIBUTES.DISPLAY_NAME, ATTRIBUTES.IMAGE, ATTRIBUTES.HIDDEN }
 
---[=[
-	Node types are stored in the place under `Nodes/NodeTypes`: one Configuration per type holding its
-	appearance as attributes, with one child Configuration per field. None of these methods record undo
-	history; callers wrap them in `NodeStore:Edit`.
-]=]
 local NodeTypes = {}
 
 export type NodeTypes = typeof(NodeTypes)
