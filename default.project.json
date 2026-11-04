@@ -1,0 +1,12 @@
+{
+	"name": "roblox-plugins",
+	"tree": {
+		"$className": "Folder",
+		"Packages": {
+			"$path": "Packages"
+		},
+		"Plugins": {
+			"$path": "plugins"
+		}
+	}
+}
