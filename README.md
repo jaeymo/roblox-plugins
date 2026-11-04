@@ -1,24 +1,6 @@
 # roblox-plugins
 A monorepo of personal Roblox Studio plugins. Each plugin lives in its own folder under `plugins/` with its own `default.project.json`, and all plugins share one set of Wally packages at the repo root.
 
-## Toolchain
-
-Managed by [Rokit](https://github.com/rojo-rbx/rokit) (see `rokit.toml`):
-
-| Tool | Purpose |
-| --- | --- |
-| rojo | Builds each plugin into an `.rbxm` |
-| wally | Package manager (root `wally.toml` → root `Packages/`) |
-| wally-package-types | Adds Luau types to Wally's package thunks |
-| lune | Runs the scripts in `.lune/` |
-| selene | Linter |
-| stylua | Formatter |
-
-```sh
-rokit install
-lune run install
-```
-
 ## Layout
 ```
 plugins/
@@ -55,5 +37,3 @@ lune run check                     # selene + stylua --check
    ```
 
 3. Require it from the plugin: `require(script.Parent.Packages.Signal)`.
-
-Note: the whole `Packages/` folder gets bundled into each plugin that maps it. You can't cherry-pick a single package, since Wally's link modules depend on `Packages/_Index`. If a plugin needs no packages, delete the `Packages` entry from its project file.
