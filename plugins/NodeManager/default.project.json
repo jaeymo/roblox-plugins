@@ -1,5 +1,5 @@
 {
-	"name": "ExamplePlugin",
+	"name": "NodeManager",
 	"tree": {
 		"$className": "Folder",
 		"Main": {

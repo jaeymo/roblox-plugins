@@ -1,6 +1,10 @@
 # roblox-plugins
 A monorepo of personal Roblox Studio plugins. Each plugin lives in its own folder under `plugins/` with its own `default.project.json`, and all plugins share one set of Wally packages at the repo root.
 
+## Plugins
+
+- [NodeManager](plugins/NodeManager/README.md): create, organize, visualize and validate development nodes in Workspace.
+
 ## Layout
 ```
 plugins/

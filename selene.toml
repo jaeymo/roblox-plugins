@@ -2,6 +2,8 @@ std = "luau+roblox"
 exclude = ["Packages/*", "DevPackages/*", ".lune/*"]
 
 [rules]
-allow_unused_self = true
 unused_variable = "warn"
 mixed_table = "allow"
+
+[config]
+unused_variable = { allow_unused_self = true, ignore_pattern = "^(_|self$)" }
